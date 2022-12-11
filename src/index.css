@@ -6,30 +6,38 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.favButton{
-  background-color: rgba(136, 136, 136, 0.116);
-  padding: 10px;
+ul{list-style: none;}
+.botonLightDarkTema{
+  background-color: rgba(136, 136, 136, 0.118);
+  padding: 15px;
   border: none;
-  width: 100%;
   cursor: pointer;
+  width: 100%;
 }
-
 h1{
   text-align: center;
 }
-
-nav{
-  display: flex;
-  width: 80vw;
-  justify-content: flex-start;
-  padding: 1rem;
+p{
+  text-align: center;
 }
-
+nav{
+  width:100%;
+  margin: auto;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: rgb(233, 236, 9);
+}
+nav ul li{
+  display: inline-block;
+  margin: 0px 20px;
+  position: relative;
+}
 a{
   color: #000;
   text-decoration: none;
@@ -39,7 +47,6 @@ a{
 a:hover{
   color: rgb(136, 136, 136);
 } 
-
 footer {
   display: flex;
   justify-content: center;
@@ -47,11 +54,11 @@ footer {
   padding: 2rem;
   position: relative;
   bottom: 0;
-  width: 90%;
+  width: 100%;
   height: 40px;
   margin-top: 2rem;
+  background-color: rgb(141, 141, 141);
 }
-
 footer > img{
   width: 200px;
   margin: 0;
@@ -60,7 +67,6 @@ footer > p{
   margin: 0;
   padding-top: 0.7rem;
 }
-
 form{
   display: flex;
   flex-direction: column;
@@ -69,40 +75,60 @@ form{
   height: 100px;
   margin: 0 auto;
 }
-
+img{display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  padding: 0.5rem 0.5rem 0 0.5rem;}
 .card{
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
   width: 200px;
+  height: 400px;
   padding: 0.5rem 0.5rem 0 0.5rem;
   border: 0.5px solid rgb(136, 136, 136);
 }
-
 .card:hover{
-  border: 0.5px solid rgb(206, 217, 142);
+  border: 0.5px solid rgb(47, 81, 230);
 }
-
 .card-grid{
   display: flex;
   justify-content: space-evenly;
   gap: 1rem;
-  width: 90vw;
+  width: 70vw;
   height: auto;
   flex-wrap: wrap;
   margin: 0 auto;
 }
-
+.detailDentista{
+  padding-left: 40%;
+}
 table {
  border-collapse: collapse;
     border-spacing: 0;
     width: 100%;
     display: table;
     border: 1px solid #ccc;
-
 }
-
+.dark{
+  background-color: #12121296;
+  color: white;
+}
+.dark > a {
+  color: white;
+}
+.dark > nav{
+  background-color: rgb(125, 136, 30);
+}
+.dark nav ul li:before{
+  background-color: white;
+}
+.dark > footer{
+  background-color: rgb(46, 46, 46);
+}
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
@@ -111,12 +137,4 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
-}
-
-.dark{
-  background-color: #12121296;
-  color: white;
-}
-.dark > a {
-  color: white;
 }
